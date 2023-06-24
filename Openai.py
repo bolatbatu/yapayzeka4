@@ -1,7 +1,7 @@
 import openai
 import os
 from gtts import gTTS
-openai.api_key = "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"
+openai.api_key = "openai.api keyinizi buraya giriniz"
 
 a=input("Sorunuzu giriniz. :")
 response = openai.Completion.create(
@@ -13,6 +13,6 @@ print(response)
 text= response.choices[0].text.replace("\n","")
 print(text)
 tts = gTTS(text=text,lang="tr")
-tts.save("24.3.Openai.mp3")
-os.system("24.3.Openai.mp3")
+tts.save("Openai.mp3")
+os.system("Openai.mp3")
 
